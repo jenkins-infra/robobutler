@@ -1,0 +1,4 @@
+#!/bin/bash -ex
+cd "$(dirname "$0")"
+erb butlerbot.conf.erb > butlerbot.conf
+PYTHONPATH=. exec supybot --debug butlerbot.conf "$@"
