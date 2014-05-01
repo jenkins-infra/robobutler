@@ -3,6 +3,7 @@
 
 nick = ENV['NICK']
 password = ENV['PASSWORD']
+html_dir = ENV['HTML_DIR']
 %>
 ###
 # Determines the bot's default nick.
@@ -743,7 +744,7 @@ supybot.plugins.MeetBot.cssFile_minutes: default
 supybot.plugins.MeetBot.endMeetingMessage: Meeting ended %(endtime)s %(timeZone)s.  Information about MeetBot at %(MeetBotInfoURL)s . (v %(__version__)s)\\nMinutes:        %(urlBasename)s.html\\nMinutes (text): %(urlBasename)s.txt\\nLog:            %(urlBasename)s.log.html
 supybot.plugins.MeetBot.filenamePattern: %(channel)s/%%Y/%(channel)s.%%F-%%H.%%M
 supybot.plugins.MeetBot.input_codec: utf-8
-supybot.plugins.MeetBot.logFileDir: /srv/meetings
+supybot.plugins.MeetBot.logFileDir: <%= html_dir %>
 supybot.plugins.MeetBot.logUrlPrefix: http://meetings.jenkins-ci.org/
 supybot.plugins.MeetBot.output_codec: utf-8
 supybot.plugins.MeetBot.pygmentizeStyle: friendly
