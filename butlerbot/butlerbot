@@ -1,8 +1,8 @@
 #!/bin/bash -ex
 cd "$(dirname "$0")"
-if [ -e /etc/butlerbot.conf ];
-  # read configuration parameters from the conf file
-  source /etc/butlerbot.conf
+if [ -e /etc/butlerbot.conf ]; then
+    # read configuration parameters from the conf file
+    source /etc/butlerbot.conf
 else
     # default value in case configuration is missing
     export NICK=robobutler-test
