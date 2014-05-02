@@ -1,4 +1,14 @@
 #!/bin/bash -ex
 cd "$(dirname "$0")"
+if [ -e /etc/butlerbot.conf ];
+  # read configuration parameters from the conf file
+  source /etc/butlerbot.conf
+else
+    # default value in case configuration is missing
+    export NICK=robobutler-test
+    export PASSWORD=bX25ihKZfZZOtQt4xrxwG9UY
+    export HTML_DIR=/var/meetings
+fi
+
 erb butlerbot.conf.erb > butlerbot.conf
 PYTHONPATH=. exec supybot --debug butlerbot.conf "$@"
