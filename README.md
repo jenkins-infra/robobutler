@@ -1,5 +1,6 @@
 ROBOBUTLER
 ==========
+[![Build Status](http://ci.jenkins-ci.org/job/infra_robobutler/badge/icon)](http://ci.jenkins-ci.org/job/infra_robobutler/)
 
 [Supybot](http://supybook.fealdia.org/devel/) plus [Meetbot](https://wiki.debian.org/MeetBot), [containerized](https://www.docker.io/) with most of the configurations fixed for deployment to the Jenkins infrastructure.
 
