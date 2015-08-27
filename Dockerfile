@@ -1,4 +1,5 @@
 FROM ubuntu:trusty
+RUN apt-get update
 RUN apt-get install -y supybot ruby
 RUN useradd --create-home -u 500 butlerbot
 ADD butlerbot /home/butlerbot
