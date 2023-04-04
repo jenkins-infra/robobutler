@@ -1,3 +1,5 @@
+⚠️ This service has been sunset in https://github.com/jenkins-infra/helpdesk/issues/3437 and is not used anymore ⚠️
+
 ROBOBUTLER
 ==========
 [![Build Status](http://ci.jenkins-ci.org/job/infra_robobutler/badge/icon)](http://ci.jenkins-ci.org/job/infra_robobutler/)
